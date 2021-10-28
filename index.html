@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Online Education Hub</title>
+  <style>
+    /* Make the image fully responsive*/
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    body {background-color: rgba(132, 183, 241, 0.925);}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Online Education Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html">Videos</a></li>
+              <li><a class="dropdown-item" href="index.html">Notes</a></li>
+              <li><a class="dropdown-item" href="index.html">E-books</a></li>
+              <li><a class="dropdown-item" href="index.html">Past year Papers</a></li>
+              <li><a class="dropdown-item" href="index.html">Sample Papers</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="contactus.html">Support</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            LOGIN
+          </button>
+
+          <!-- LOGINModal -->
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login to online education hub</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Registered Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">REMEMBER ME</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+            SIGNUP
+          </button>
+
+          <!-- signupModal -->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="signupModalLabel">CREATE AN ACCOUNT </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Enter Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                Privacy</a>.</p>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">REMEMBER ME</label>
+                    </div>
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/corousel1.jpeg" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="image/corousel2.jpeg" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="image/corousel3.jpeg" width="1100" height="500">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col">ONLINE EDUCATION HUB</div>
+        <div class="card" style="width: 18rem;">
+          <img src="image/photo1633539092 (4).jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Notes</h5>
+            <p class="card-text">Get the most reliable and structured notes.</p>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Click here
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="https://mega.nz/folder/DtsU1TQR#B5MRHV1poE0ATnVAS60hIg/file/a9sQhJZa">
+                  semester 1</a></li>
+                <li><a class="dropdown-item" href="https://mega.nz/folder/uk1wwDrQ#Pjh2gsghvGI_9ZtzSN_z-w/file/6glk1ZTY">
+                  semester 2</a></li>
+                <li><a class="dropdown-item" href="#">semester 3</a></li>
+                <li><a class="dropdown-item" href="#">semester 4</a></li>
+                <li><a class="dropdown-item" href="#">semester 5</a></li>
+                <li><a class="dropdown-item" href="#">semester 6</a></li>
+                <li><a class="dropdown-item" href="#">semester 7</a></li>
+                <li><a class="dropdown-item" href="#">semester 8</a></li>
+              </ul>
+            </div>
+
+
+          </div>
+          <div class="col">BEST YOUTUBE VIDEO LINKS</div>
+          <div class="card" style="width: 18rem;">
+            <img src="IMAGE/photo1633539092 (7).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Videos</h5>
+              <p class="card-text">The best video lecture available right here.</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Click here
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="https://mega.nz/folder/DtsU1TQR#B5MRHV1poE0ATnVAS60hIg/file/TpMnlKIb">semester 1</a></li>
+                  <li><a class="dropdown-item" href="https://mega.nz/folder/uk1wwDrQ#Pjh2gsghvGI_9ZtzSN_z-w/file/S40gEbgb">semester 2</a></li>
+                  <li><a class="dropdown-item" href="#">semester 3</a></li>
+                  <li><a class="dropdown-item" href="#">semester 4</a></li>
+                  <li><a class="dropdown-item" href="#">semester 5</a></li>
+                  <li><a class="dropdown-item" href="#">semester 6</a></li>
+                  <li><a class="dropdown-item" href="#">semester 7</a></li>
+                  <li><a class="dropdown-item" href="#">semester 8</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">PRACTISE QUESTION</div>
+            <div class="card" style="width: 18rem;">
+              <img src="image/photo1633539092 (6).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Previous years papers</h5>
+                <p class="card-text">Check out the last years question paper to get an idea of the questions.</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Click here
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">semester 1</a></li>
+                    <li><a class="dropdown-item" href="#">semester 2</a></li>
+                    <li><a class="dropdown-item" href="#">semester 3</a></li>
+                    <li><a class="dropdown-item" href="#">semester 4</a></li>
+                    <li><a class="dropdown-item" href="#">semester 5</a></li>
+                    <li><a class="dropdown-item" href="#">semester 6</a></li>
+                    <li><a class="dropdown-item" href="#">semester 7</a></li>
+                    <li><a class="dropdown-item" href="#">semester 8</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">formula sheet</div>
+            <div class="card" style="width: 18rem;">
+              <img src="image/photo1633539092 (2).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Formula sheet</h5>
+                <p class="card-text">Last moment formula sheets.</p>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Click here
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="https://mega.nz/folder/DtsU1TQR#B5MRHV1poE0ATnVAS60hIg/file/TokAnRrI">semester 1</a></li>
+                    <li><a class="dropdown-item" href="https://mega.nz/folder/uk1wwDrQ#Pjh2gsghvGI_9ZtzSN_z-w/file/rolEETAT">semester 2</a></li>
+                    <li><a class="dropdown-item" href="#">semester 3</a></li>
+                    <li><a class="dropdown-item" href="#">semester 4</a></li>
+                    <li><a class="dropdown-item" href="#">semester 5</a></li>
+                    <li><a class="dropdown-item" href="#">semester 6</a></li>
+                    <li><a class="dropdown-item" href="#">semester 7</a></li>
+                    <li><a class="dropdown-item" href="#">semester 8</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="container">
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>©2021 Online Education Hub, Inc. .<a href="#">Privacy</a>.<a href="#">Terms</a></p>
+        </footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
